@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Cadastrar Boletim</title>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/svg+xml" href="img/oncoming-police-car.svg" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<link rel="stylesheet" type="text/css" href="css/cadastroBo.css" /> 
+		<script src="jquery/jquery-2.1.4.min.js"></script> 
+		<script src="js/global.js"></script>
+		<script src="js/cadastroBo.js"></script>       
+	</head>
+	<body>
+	<header id="navbar">
+	    <a href="index.html" class="logo-area">
+	        <img src="img/police.png" alt="Logo Polícia" />
+	        <div class="logo-text">
+	            <h2>Delegacia Eletrônica</h2>
+	            <p>Controle de Furto de Veículos</p>
+	        </div>
+	    </a>
+	
+	    <nav>
+	        <ul>
+	            <li><a href="cadastroBo.html">Cadastrar Boletim</a></li>
+	            <li><a href="consulta.html">Consultar Boletim</a></li> 
+	            <li><a href="listaBos.html">Relatório</a></li> 
+	        </ul>
+	    </nav>
+	</header>
+	 <center><img height='5' src='img/utfLinha.jpg' width='100%'></center>
+	<div class="main-container"> 
+	<button id="backButton"> &leftarrow; </button>	
+    <h1>Cadastro de Boletim de Ocorrência - Furto de veículo</h1>
+    
+    <div id="dadosContato">
+      <fieldset>
+        <legend><h3>Dados da Ocorrência</h3></legend>
+        <div class="insertData"><label for="data">Data:</label><input id="data" type="text"></div><br>
+        <div class="insertData"><label for="periodo">Período:</label><input id="periodo" type="text"></div><br>
+        <div class="insertData"><label for="logradouro">Logradouro:</label><input id="logradouro" type="text"></div><br>
+        <div class="insertData"><label for="numero">Número:</label><input id="numero" type="text"></div><br>
+        <div class="insertData"><label for="bairro">Bairro:</label><input id="bairro" type="text"></div><br>
+        <div class="insertData"><label for="cidade">Cidade:</label><input id="cidade" type="text"></div><br>
+        <div class="insertData"><label for="estado">Estado:</label><input id="estado" type="text"></div><br>
+      </fieldset>      
+      <br>
+      <fieldset>
+        <legend><h3>Dados do veículo</h3></legend>
+        <div class="insertData"><label for="placa">Placa:</label><input id="placa" type="text"></div><br>
+        <div class="insertData"><label for="estadoPlaca">Estado (Placa):</label><input id="estadoPlaca" type="text"></div><br>
+        <div class="insertData"><label for="cidadePlaca">Cidade (Placa):</label><input id="cidadePlaca" type="text"></div><br>
+        <div class="insertData"><label for="cor">Cor:</label><input id="cor" type="text"></div><br>
+        <div class="insertData"><label for="marca">Marca:</label><input id="marca" type="text"></div><br>
+        <div class="insertData"><label for="tipo">Tipo:</label><input id="tipo" type="text"></div><br>
+        <div class="insertData"><label for="ano">Ano:</label><input id="ano" type="text" placeholder="AAAA"></div><br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend><h3>Dados da vítima</h3></legend>
+        <div class="insertData"><label for="nome">Nome:</label><input id="nome" type="text"></div><br>
+        <div class="insertData"><label for="email">Email:</label><input id="email" type="text"></div><br>
+        <div class="insertData"><label for="telefone">Telefone:</label><input id="telefone" type="text"></div><br>	
+      </fieldset>
+      <br>
+      
+      <div id="botoes-form"> 
+       <button id="botaoCancelar" onclick="location.href = 'index.html'; return false;">Cancelar</button>
+       <button id="botaoSalvar" onclick="cadastrar('http://localhost:8080/api/boletins')">Cadastrar</button>
+      </div>
+      <br>
+    </div>
+    <span id="resultado"></span>
+</div>
+	</body>
+</html>

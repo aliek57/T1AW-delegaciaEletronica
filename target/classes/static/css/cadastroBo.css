@@ -1,0 +1,90 @@
+button {
+    background-color: #6b7895;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #55607a;
+}
+
+#botaoCancelar {
+    background-color: #CCCCCC;
+    color: #333;
+}
+
+#botaoCancelar:hover {
+    background-color: #b0b0b0;
+}
+
+#dadosContato {
+    margin-top: 20px;
+    padding: 0 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#dadosContato fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#dadosContato legend {
+    font-weight: bold;
+    color: #6b7895;
+    font-size: 1.2em;
+}
+
+.insertData {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 10px;
+}
+
+#dadosContato label, #dadosContato input, #dadosContato select {
+    box-sizing: border-box; 
+    margin: 5px 0;
+}
+
+#dadosContato label  {
+   width: 110px;
+   color: #333;
+}
+
+#dadosContato input, #dadosContato select {
+   width: 350px;
+   float: left;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   box-sizing: border-box; 
+}
+
+#dadosContato br {
+    clear: both;
+    line-height: 0;
+    height: 0;
+}
+
+#resultado {
+    padding: 15px 20px;
+    margin: 25px 0;
+    border: 1px solid #6b7895; 
+    border-radius: 8px;
+    background-color: #9ae6d1;
+    color: #000000;
+    font-weight: bold;
+    text-align: center; 
+    line-height: 1.6;
+    display: block;
+}

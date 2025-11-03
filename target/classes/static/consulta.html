@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Consultar Boletim</title>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/svg+xml" href="img/oncoming-police-car.svg" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+		<link rel="stylesheet" type="text/css" href="css/global.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/listaBos.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/consulta.css" /> 
+		<script src="jquery/jquery-2.1.4.min.js"></script>
+		<script src="js/global.js"></script>
+		<script src="js/consulta.js"></script> 
+	</head>
+	<body>
+	<header id="navbar">
+	    <a href="index.html" class="logo-area">
+	        <img src="img/police.png" alt="Logo Polícia" />
+	        <div class="logo-text">
+	            <h2>Delegacia Eletrônica</h2>
+	            <p>Controle de Furto de Veículos</p>
+	        </div>
+	    </a>
+	    <nav>
+	        <ul>
+	            <li><a href="cadastroBo.html">Cadastrar Boletim</a></li>
+	            <li><a href="consulta.html">Consultar Boletim</a></li> 
+	            <li><a href="listaBos.html">Relatório</a></li> 
+	        </ul>
+	    </nav>
+	</header>
+	<center><img height='5' src='img/utfLinha.jpg' width='100%'></center>
+	<div class="main-container"> 
+	<button id="backButton"> &leftarrow; </button>
+	  <h1>Consulta de Boletins de Ocorrência - Furto de veículo</h1>	    
+	  <div id="filter-area">
+          <label for="search-criteria">Buscar por:</label>
+          <select id="search-criteria">
+              <option value="identificador">Identificador</option>
+              <option value="cidade">Cidade da Ocorrência</option>
+              <option value="periodo">Período da Ocorrência</option>
+              <option value="placa">Placa do Veículo</option>
+              <option value="cor">Cor do Veículo</option>
+              <option value="tipo">Tipo de Veículo</option>
+          </select>  
+          <input type="text" id="search-value" placeholder="O que você está buscando...">        
+          <button id="search-button">Buscar</button>
+      </div>
+      <br>
+	    <div class="table-wrapper"> 
+	        <table id="tabelaBos">
+	            <thead>
+	                <tr>
+	                    <th scope="col">ID</th>
+	                    <th scope="col">Data</th>
+	                    <th scope="col">Cidade</th>
+	                    <th scope="col">Bairro</th>
+	                    <th scope="col">Período</th>
+	                    <th scope="col">Marca</th>
+	                    <th scope="col">Placa</th>
+	                    <th scope="col">Cor</th>
+	                    <th scope="col">Tipo</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	              </tbody>
+	        </table>
+	    </div>
+	    <span id="loading">Use a área de filtros para iniciar sua busca.</span>
+	</div>
+	</body>
+</html>
